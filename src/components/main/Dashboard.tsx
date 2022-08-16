@@ -1,7 +1,9 @@
 const Dashboard: React.FC = () => {
-   return <div>
-   
-</div>
+   return (
+      <div>
+         Mityaalim App
+      </div>
+   )
 };
 
 export default Dashboard;
