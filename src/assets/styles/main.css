@@ -1,0 +1,6 @@
+/* Basics */
+
+@import "basics/base.css";
+
+/* Pages */
+@import "pages/register.css";
