@@ -1,7 +1,7 @@
 export interface introData {
   header: string;
   text: string;
-  img: any;
+  img: string;
   page: Number;
   position: string;
 }
