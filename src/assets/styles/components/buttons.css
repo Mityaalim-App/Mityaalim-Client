@@ -1,0 +1,8 @@
+.green-button {
+  background: var(--green);
+  color: var(--white);
+  border-radius: 18px;
+  height: 36px;
+  font-weight: 700;
+  width: 100%;
+}

@@ -6,7 +6,7 @@ import "./assets/styles/main.css";
 import Dashboard from "./components/main/Dashboard";
 import Navbar from "./components/main/Navbar";
 import Footer from "./components/main/Footer";
-import Onboarding from "./components/onboarding/Onboarding";
+import Introduction from "./components/onboarding/Introduction";
 import Login from "./components/auth/Login";
 import ForgotPassword from "./components/auth/ForgotPassword";
 import PasswordReset from "./components/auth/PasswordReset";
@@ -35,7 +35,7 @@ function App() {
             </>
           }
         />
-        <Route path="/intro" element={<Onboarding />} />
+        <Route path="/intro" element={<Introduction />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login/forgot-password" element={<ForgotPassword />} />

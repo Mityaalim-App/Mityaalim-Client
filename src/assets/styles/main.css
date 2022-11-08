@@ -1,6 +1,13 @@
 /* Basics */
-
 @import "basics/base.css";
+@import "basics/helpers.css";
 
 /* Pages */
 @import "pages/register.css";
+@import "pages/introduction.css";
+
+/* components */
+@import "components/buttons.css";
+
+/* setup */
+@import "setup/_variables.css";
