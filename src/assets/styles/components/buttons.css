@@ -6,3 +6,9 @@
   font-weight: 700;
   width: 100%;
 }
+
+@media (min-width: 700px) {
+  .green-button {
+    width: 80%;
+  }
+}

@@ -54,28 +54,32 @@ const Introduction: React.FC = () => {
             <HeaderImg />
           </div>
         </div>
-        <div className="intro-modal">
-          <div className="text-modal">
-            <h1>{intro.header}</h1>
-            <p>{intro.text}</p>
+        <div className="modal-button-container">
+          <div className="modal-timeline-container">
+            <div className="intro-modal">
+              <div className="text-modal">
+                <h1>{intro.header}</h1>
+                <p>{intro.text}</p>
+              </div>
+            </div>
+            <div className="timeline-container">
+              <div
+                className={`intro-timeline ${
+                  intro.page === 1 ? "active-timeline" : ""
+                }`}
+              ></div>
+              <div
+                className={`intro-timeline ${
+                  intro.page === 2 ? "active-timeline" : ""
+                }`}
+              ></div>
+            </div>
           </div>
-        </div>
-        <div className="timeline-container">
-          <div
-            className={`intro-timeline ${
-              intro.page === 1 ? "active-timeline" : ""
-            }`}
-          ></div>
-          <div
-            className={`intro-timeline ${
-              intro.page === 2 ? "active-timeline" : ""
-            }`}
-          ></div>
-        </div>
-        <div className="intro-cmps-container button-container">
-          <button onClick={onContinue} className="green-button">
-            המשך
-          </button>
+          <div className="intro-cmps-container button-container">
+            <button onClick={onContinue} className="green-button">
+              המשך
+            </button>
+          </div>
         </div>
       </div>
     </div>
