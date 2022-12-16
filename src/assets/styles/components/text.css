@@ -1,0 +1,15 @@
+.h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.p1 {
+  font-weight: 400;
+}
+
+@media (min-width: 700px) {
+  .green-button {
+    width: 80%;
+  }
+}

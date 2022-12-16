@@ -5,9 +5,11 @@
 /* Pages */
 @import "pages/register.css";
 @import "pages/introduction.css";
+@import "pages/login.css";
 
 /* components */
 @import "components/buttons.css";
+@import "components/text.css";
 
 /* setup */
 @import "setup/_variables.css";

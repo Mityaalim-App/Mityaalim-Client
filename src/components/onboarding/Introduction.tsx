@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+// import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { renderToStaticMarkup } from "react-dom/server";
 
@@ -42,27 +43,27 @@ const Introduction: React.FC = () => {
 
   return (
     <div
-      className="introduction"
+      className="introduction flex jus-center"
       style={{
         backgroundImage: `url("data:image/svg+xml,${intro.img}")`,
         backgroundPosition: intro.position,
       }}
     >
-      <div className="intro-container">
+      <div className="intro-container flex flex-col">
         <div className="header-container">
-          <div className="intro-cmps-container">
+          <div className="intro-cmps-container flex jus-center al-center">
             <HeaderImg />
           </div>
         </div>
-        <div className="modal-button-container">
+        <div className="modal-button-container flex flex-col al-center">
           <div className="modal-timeline-container">
-            <div className="intro-modal">
+            <div className="intro-modal flex jus-center">
               <div className="text-modal">
-                <h1>{intro.header}</h1>
-                <p>{intro.text}</p>
+                <div className="h1">{intro.header}</div>
+                <div className="p1">{intro.text}</div>
               </div>
             </div>
-            <div className="timeline-container">
+            <div className="timeline-container flex">
               <div
                 className={`intro-timeline ${
                   intro.page === 1 ? "active-timeline" : ""

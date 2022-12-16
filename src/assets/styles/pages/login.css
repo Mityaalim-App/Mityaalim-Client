@@ -1,0 +1,23 @@
+.login {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.text-container {
+  text-align: center;
+  margin: auto 30px;
+}
+
+.phone-input {
+  margin-top: 15px;
+}
+
+@media (min-width: 700px) {
+  .modal-button-container {
+    flex-direction: row;
+  }
+
+  .green-button {
+    width: 80%;
+  }
+}
