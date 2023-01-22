@@ -1,10 +1,9 @@
 import Balance from "./Balance";
 import DailyReport from "./DailyReport";
-import Navbar from "./Navbar";
-
-import { ReactComponent as BrandingImg } from "../../assets/svgs/dashboard/summary.svg";
 import WeeklyTasks from "./WeeklyTasks";
 import Traget from "./Target";
+
+import { ReactComponent as BrandingImg } from "../../assets/svgs/dashboard/summary.svg";
 
 const Dashboard: React.FC = () => {
   return (
