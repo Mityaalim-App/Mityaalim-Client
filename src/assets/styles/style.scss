@@ -1,3 +1,7 @@
+/* setup */
+@import "setup/_variables.css";
+@import "setup/_typography.css";
+
 /* Basics */
 @import "basics/base.css";
 @import "basics/helpers.css";
@@ -11,5 +15,8 @@
 @import "components/buttons.css";
 @import "components/text.css";
 
-/* setup */
-@import "setup/_variables.css";
+//PAGES
+@import "../styles/pages/dashboard";
+
+//CMPS
+@import "../styles/components/nav";

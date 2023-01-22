@@ -1,0 +1,27 @@
+{
+  "name": "אלעד ומאיה",
+  "coins": 24563,
+  "leaves": 2500,
+  "target": 2000,
+  "reports": [
+    {
+      "id": "reportId",
+      "date": "Sun Jan 1 2023 12:00:00 GMT+0200 (Israel Standard Time)",
+      "type": "income",
+      "amount": 5000
+    },
+    {
+      "id": "reportId",
+      "date": "Sun Jan 1 2023  12:00:00 GMT+0200 (Israel Standard Time)",
+      "type": "income",
+      "amount": 5000
+    },
+    {
+      "id": "reportId",
+      "date": "Sun Jan 1 2023 12:00:00 GMT+0200 (Israel Standard Time)",
+      "type": "expense",
+      "amount": 3000
+    }
+  ],
+  "tasks": { "video": true, "podcast": false, "article": false }
+}

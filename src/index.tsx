@@ -6,6 +6,8 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
+import "./assets/styles/style.scss";
+
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
