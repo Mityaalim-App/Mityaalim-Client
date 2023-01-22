@@ -19,7 +19,7 @@ import UserInfoEdit from "./components/users/UserInfoEdit";
 import ArticleList from "./components/tasks/ArticleList";
 import PodcastList from "./components/tasks/PodcastList";
 import VideoList from "./components/tasks/VideoList";
-import Register from "./components/auth/Register";
+// import Register from "./components/auth/Register";
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
         />
         <Route path="/intro" element={<Introduction />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/register" element={<Register />} /> */}
         <Route path="/login/forgot-password" element={<ForgotPassword />} />
         <Route path="/login/reset-password" element={<PasswordReset />} />
         <Route path="/user/edit/:id" element={<UserInfoEdit />} />
