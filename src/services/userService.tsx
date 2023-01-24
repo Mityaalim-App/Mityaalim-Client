@@ -26,9 +26,9 @@ function getMonthlyBalance() {
   return monthTrans.reduce(
     (acc, tran) => {
       if (tran.type === "income") acc.income += tran.amount;
-      if (tran.type === "expense") acc.expenses += tran.amount;
+      if (tran.type === "expense") acc.expense += tran.amount;
       return acc;
     },
-    { income: 0, expenses: 0 }
+    { income: 0, expense: 0 }
   );
 }

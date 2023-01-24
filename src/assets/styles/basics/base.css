@@ -9,6 +9,7 @@
   direction: rtl;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -19,4 +20,9 @@ body {
 
 #root {
   height: 100%;
+}
+
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
 }

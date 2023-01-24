@@ -6,7 +6,7 @@ import user from "../../data/user.json";
 
 const Navbar: React.FC = () => {
   return (
-    <header className="dashboard-header">
+    <header>
       <div className="logo-container">
         <LogoText />
       </div>

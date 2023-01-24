@@ -24,7 +24,7 @@ const Traget: React.FC = () => {
         <h5>נותר לך להוצאות:</h5>
         <div className="total">
           <h2>
-            {(balance.income - balance.expenses - user.target).toLocaleString()}
+            {(balance.income - balance.expense - user.target).toLocaleString()}
           </h2>
           <button className="more-details">לאן הולך הכסף?</button>
         </div>

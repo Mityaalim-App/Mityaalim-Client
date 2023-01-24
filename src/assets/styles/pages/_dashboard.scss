@@ -1,7 +1,11 @@
 .dashboard {
     background-color: var(--background);
     position: relative;
-    padding:0 0 25px 15px;
+
+    padding-bottom: 25px;
+
+    // padding: 0 0 25px 15px;
+
 
     .float-img {
         position: absolute;
@@ -36,7 +40,7 @@
     }
 
     .summary {
-        margin: 0 15px;
+        margin: 0 15px 25px;
         padding-top: 35px;
 
         .date {
@@ -255,6 +259,47 @@
             padding: 15px 15px 0;
         }
 
+        // progress {
+        //     width: 100%;
+        // }
+
+        // label {
+        //     color: white;
+        //     background-color: black;
+        //     padding: 2px 8px;
+
+        //     // &::after {
+        //     //     margin: 2px;
+        //     //     content: "₪";
+        //     //     font-size: 16px;
+        //     //     font-weight: normal;
+        //     //     font-weight: 400;
+        //     // }
+        // }
+
+        // .progress-bar {
+        //     padding: 0 15px;
+
+        //     .PrivateValueLabel-circle-9 {
+        //         width: 125px;
+        //         font-size: 16px;
+        //         transform: rotate(0);
+        //         border-radius: 2px;
+        //         background-color: black;
+        //         color: white;
+
+        //         transform: translateX(-50px);
+
+        //         &::after {
+        //             margin: 2px;
+        //             content: "₪";
+        //             font-size: 16px;
+        //             font-weight: normal;
+        //             font-weight: 400;
+        //         }
+        //     }
+        // }
+
         .progress-bar {
             width: 100%;
             padding: 0 15px;
@@ -336,6 +381,121 @@
                     }
                 }
             }
+
+            .goal {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+
+                & > * {
+                    position: absolute;
+                }
+
+                .line {
+                    top: -18px;
+                    background-color: white;
+                    width: 2px;
+                    height: 17px;
+                    box-shadow: 1px 1px 1px var(--outline2);
+                }
+                .triangle {
+                    top: 3px;
+                    // width: 0;
+                    // height: 0;
+                    border-style: solid;
+                    border-width: 0 10px 8px 10px;
+                    border-color: transparent transparent black transparent;
+                }
+
+                .label {
+                    /* width: 110px; */
+                    width: 125px;
+                    text-align: center;
+                    top: 10px;
+                    background-color: black;
+                    border-radius: 2px;
+
+                    h4 {
+                        color: white;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 36px;
+                        padding: 0 5px;
+
+                        span {
+                            display: inline-block;
+                            /* font-family: roboto; */
+                            font-weight: 700;
+                            letter-spacing: 1px;
+
+                            &::before {
+                                margin: 2px;
+                                content: "₪";
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+
+                // .left {
+                //     position: absolute;
+                //     top: 174px;
+                //     flex-grow: 1;
+                //     display: flex;
+                //     flex-direction: column;
+                //     height: 92px;
+
+                //     h5 {
+                //         font-weight: 400;
+                //         font-size: 16px;
+                //         line-height: 24px;
+                //         color: var(--outline2);
+                //         letter-spacing: 0.1px;
+                //         padding: 0 15px;
+                //     }
+
+                //     .total {
+                //         margin-top: 5px;
+                //         display: flex;
+                //         justify-content: space-between;
+                //         align-items: center;
+                //         flex-grow: 1;
+                //         padding: 0 15px;
+                //         background-color: var(--income-bar);
+                //         /* line-height: 80px; */
+
+                //         h2 {
+                //             font-size: 36px;
+                //             font-weight: 700;
+                //             color: white;
+                //             line-height: 50px;
+                //             &::before {
+                //                 margin: 2px;
+                //                 content: "₪";
+                //                 font-size: 24px;
+                //                 font-weight: normal;
+                //                 font-weight: 400;
+                //             }
+                //         }
+
+                //         button.more-details {
+                //             outline: none;
+                //             border: none;
+                //             border-radius: 100px;
+                //             background-color: var(--green);
+                //             color: white;
+                //             font-weight: 700;
+                //             font-size: 14px;
+                //             line-height: 24px;
+                //             letter-spacing: 1px;
+                //             width: 131px;
+                //             height: 39px;
+                //         }
+                //     }
+                // }
+            }
         }
 
         .left {
@@ -392,121 +552,6 @@
                     letter-spacing: 1px;
                     width: 131px;
                     height: 39px;
-                }
-            }
-        }
-
-        .goal {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            width: 313px;
-
-            & > * {
-                position: absolute;
-            }
-
-            .line {
-                top: -18px;
-                background-color: white;
-                width: 2px;
-                height: 17px;
-                box-shadow: 1px 1px 1px var(--outline2);
-            }
-            .triangle {
-                top: 3px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0 10px 8px 10px;
-                border-color: transparent transparent black transparent;
-            }
-
-            .label {
-                /* width: 110px; */
-                /* width: 33%; */
-                text-align: center;
-                top: 10px;
-                background-color: black;
-                border-radius: 2px;
-
-                h4 {
-                    color: white;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 36px;
-                    padding: 0 5px;
-
-                    span {
-                        display: inline-block;
-                        /* font-family: roboto; */
-                        font-weight: 700;
-                        letter-spacing: 1px;
-
-                        &::before {
-                            margin: 2px;
-                            content: "₪";
-                            font-size: 16px;
-                            font-weight: 400;
-                        }
-                    }
-                }
-            }
-
-            .left {
-                position: absolute;
-                top: 174px;
-                flex-grow: 1;
-                display: flex;
-                flex-direction: column;
-                height: 92px;
-
-                h5 {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 24px;
-                    color: var(--outline2);
-                    letter-spacing: 0.1px;
-                    padding: 0 15px;
-                }
-
-                .total {
-                    margin-top: 5px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-grow: 1;
-                    padding: 0 15px;
-                    background-color: var(--income-bar);
-                    /* line-height: 80px; */
-
-                    h2 {
-                        font-size: 36px;
-                        font-weight: 700;
-                        color: white;
-                        line-height: 50px;
-                        &::before {
-                            margin: 2px;
-                            content: "₪";
-                            font-size: 24px;
-                            font-weight: normal;
-                            font-weight: 400;
-                        }
-                    }
-
-                    button.more-details {
-                        outline: none;
-                        border: none;
-                        border-radius: 100px;
-                        background-color: var(--green);
-                        color: white;
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 24px;
-                        letter-spacing: 1px;
-                        width: 131px;
-                        height: 39px;
-                    }
                 }
             }
         }
